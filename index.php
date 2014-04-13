@@ -74,7 +74,7 @@ if ($posts === false) { header("Location: ./error.php"); exit; }
 
 	<div id="contents">
 		<form action="write.php" method="post">
-			コメント：<input type="text" name="comment" maxlength="120"><br>
+			Comment:<input type="text" name="comment" maxlength="120"><br>
 			<input type="submit" value="Submit">
 		</form>
 		<?php
