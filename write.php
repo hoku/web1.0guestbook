@@ -23,7 +23,7 @@ array_splice($posts, 0, 0, $newPost);
 // remove over limit posts
 $nowSize = count($posts);
 for ($i = MAX_POSTS_SIZE; $i < $nowSize; $i++) {
-	unset($posts);
+	unset($posts[$i]);
 }
 
 // save posts
